@@ -1,12 +1,14 @@
- 
+import { ThemeProvider } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
+import theme from './theme/theme'
+import Home from './pages/Home/Home'
 
-const App = () => {
-
-
+function App() {
   return (
-    <>
-      App
-    </>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Home />
+    </ThemeProvider>
   )
 }
 
